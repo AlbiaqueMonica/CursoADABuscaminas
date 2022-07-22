@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Reglas Buscaminas</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <header>
+        <nav>
+            <a href="finPartida.html" >Fin de Partida</a>
+        </nav>
+      <h1>💥 Buscaminas - El Juego 💥</h1>
+      <p>
+        Como su propio nombre indica,
+        <strong
+          >el objetivo del juego es despejar la pantalla sin detonar ninguna
+          mina por accidente.</strong
+        >
+      </p>
+      <p>
+        ✅ Actualmente, el Buscaminas se puede jugar gratis desde el navegador
+        de Google Chrome.
+      </p>
+    </header>
+    <main>
+      <div>
+        <h2>✨ Reglas del juego</h2>
+        <ol>
+          <li>
+            El juego consiste en despejar todas las casillas de una pantalla que
+            no oculten una mina.
+          </li>
+          <li>
+            Algunas casillas tienen un número, el cual indica la cantidad de
+            minas que hay en las casillas circundantes.
+          </li>
+          <li>
+            Así, si una casilla tiene el número 3, significa que de las ocho
+            casillas que hay alrededor (si no es en una esquina o borde) hay 3
+            con minas y 5 sin minas.
+          </li>
+          <li>
+            Si se descubre una casilla sin número indica que ninguna de las
+            casillas vecinas tiene mina y éstas se descubren automáticamente.
+          </li>
+          <li>Si se descubre una casilla con una mina se pierde la partida.</li>
+          <li>
+            Se puede poner una marca en las casillas que el jugador piensa que
+            hay minas para ayudar a descubrir las que están cerca.
+          </li>
+          <li>
+            Cada nivel se genera de manera aleatoria, así que no habrá dos
+            partidas iguales.
+          </li>
+        </ol>
+      </div>
+      <div>
+        <h2>✨ TIPS de juego</h2>
+        <ul>
+          <li>
+            Al pulsar sobre las celdas, aparece una zona despejada y números que
+            determinan la proximidad de una mina. Una mina (1), dos minas (2),
+            tres minas (3)... y así sucesivamente.
+          </li>
+          <li>
+            Por ejemplo, en las celdas contiguas a un [2] sólo habrá dos minas.
+            Tienes que marcar las celdas correctas para avanzar en el juego.
+          </li>
+          <li>
+            Los números son la única clave del juego, así que presta mucha
+            atención. El número indica cuántas minas hay en las celdas
+            contiguas.
+          </li>
+          <li>
+            Un [1] nunca puede tener 2 minas alrededor, por ejemplo. Puedes
+            empezar por una mina que se vea claramente y proseguir a partir de
+            ahí.
+          </li>
+          <li>
+            Cuando descubras más campos libre de minas, tendrás más pistas para
+            completar el juego poco a poco.
+          </li>
+        </ul>
+      </div>
+      <div>
+        <img src="img/buscaminas.jpg" alt="imagen tablero" style="width: 50%" />
+      </div>
+    </main>
+  </body>
+</html>
