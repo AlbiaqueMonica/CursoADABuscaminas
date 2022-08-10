@@ -3,50 +3,63 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>Reglas Buscaminas</title>
+    <title>Buscaminas - El Juego</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <style>
+      header {
+    
+        background-color: #F2A7AD;
+      }
+    </style>
   </head>
 
   <body>
-    <header>
-        <nav>
-            <a href="finPartida.html" >Fin de Partida</a>
+    <section class="todo">
+
+      <header>
+        <nav class="main-nav">
+          <ul id="main-menu" class="main-menu">
+            <li class="main-menu__item">
+            <a href="#" class="main-menu__link">Inicio</a>
+          </li>
+          <li class="main-menu__item">
+            <a href="finPartida.html" class="main-menu__link">Fin de partida</a>
+          </li>
+          <li class="main-menu__item">
+            <a href="https://www.linkedin.com/in/monica-liliana-albiaque/" target="_blank" rel="noopener"><i class="fa">&#xf08c;</i></a>
+          </li>
+          <li class="main-menu__item">
+            <a href="https://github.com/AlbiaqueMonica" target="_blank" rel="noopener"><i class="fa">&#xf09b;</i></a>
+          </li>
+          </ul>
+          
         </nav>
-      <h1>💥 Buscaminas - El Juego 💥</h1>
-      <p>
-        Como su propio nombre indica,
-        <strong
-          >el objetivo del juego es despejar la pantalla sin detonar ninguna
-          mina por accidente.</strong
-        >
-      </p>
-      <p>
-        ✅ Actualmente, el Buscaminas se puede jugar gratis desde el navegador
-        de Google Chrome.
-      </p>
-    </header>
-    <main>
-      <div>
+       
+    <div><h1>💥 Buscaminas - ADA School 💥</h1></div>
+      </header>
+
+     
+        
+        <div class="container">
+      <aside >
         <h2>✨ Reglas del juego</h2>
         <ol>
           <li>
             El juego consiste en despejar todas las casillas de una pantalla que
-            no oculten una mina.
+            no oculten una mina. Haz clic en una casilla para abrirla.
           </li>
           <li>
-            Algunas casillas tienen un número, el cual indica la cantidad de
-            minas que hay en las casillas circundantes.
-          </li>
-          <li>
-            Así, si una casilla tiene el número 3, significa que de las ocho
+            El número de una casilla indica cuántas casillas contiguas tienen una mina. Así, si una casilla tiene el número 3, significa que de las ocho
             casillas que hay alrededor (si no es en una esquina o borde) hay 3
             con minas y 5 sin minas.
           </li>
+          
           <li>
             Si se descubre una casilla sin número indica que ninguna de las
             casillas vecinas tiene mina y éstas se descubren automáticamente.
           </li>
-          <li>Si se descubre una casilla con una mina se pierde la partida.</li>
+          <li>Si abres una casilla que contiene una mina pierdes la partida.</li>
           <li>
             Se puede poner una marca en las casillas que el jugador piensa que
             hay minas para ayudar a descubrir las que están cerca.
@@ -56,16 +69,99 @@
             partidas iguales.
           </li>
         </ol>
-      </div>
-      <div>
+        <div class="images">
+          
+            <div><img src="img/banderin.png" alt="imagen tablero"  /></div>
+            <div><img src="img/bomba.png" alt="imagen tablero"  /></div>
+            <div><img src="img/botonvs.png" alt="imagen tablero"  /></div>
+          
+        </div>
+      </aside>
+      <section class="main">
+             
+          <div class="bot-tablero" style="background-color:#F25260 ;">Iniciar Partida</div>
+            <div class="cont-tablero">
+              <div class="cabecera-tablero">
+                <div class="contador">00</div>
+                <div></div>
+                <div class="contador">00</div>
+              </div>
+              <div class="tablero">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              </div>
+            </div>
+        
+      </section>
+      <aside >
         <h2>✨ TIPS de juego</h2>
-        <ul>
+        <ul >
           <li>
             Al pulsar sobre las celdas, aparece una zona despejada y números que
             determinan la proximidad de una mina. Una mina (1), dos minas (2),
             tres minas (3)... y así sucesivamente.
-          </li>
-          <li>
             Por ejemplo, en las celdas contiguas a un [2] sólo habrá dos minas.
             Tienes que marcar las celdas correctas para avanzar en el juego.
           </li>
@@ -82,12 +178,26 @@
           <li>
             Cuando descubras más campos libre de minas, tendrás más pistas para
             completar el juego poco a poco.
+            
           </li>
+          
         </ul>
+        <div class="images">
+          
+          <div><img src="img/otramina.png" alt="imagen tablero"  /></div>
+          <div><img src="img/mina-bit.png" alt="imagen tablero"  /></div>
+          <div><img src="img/varios.png" alt="imagen tablero"  /></div>
+        
       </div>
-      <div>
-        <img src="img/buscaminas.jpg" alt="imagen tablero" style="width: 50%" />
-      </div>
-    </main>
-  </body>
+       <!--<img src="img/buscaminas.jpg" alt="imagen tablero"  />-->
+      </aside>
+    
+  </div>
+  
+  
+</section>
+<footer style="background-color: #F2A7AD">
+  <p>© Mónica 2022  Curso ADA</p>
+</footer>
+</body>
 </html>
