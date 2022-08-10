@@ -37,7 +37,7 @@ body{
 }
 
 .main-menu__link{
-    color: #27BF0F;
+    color: black;
     /*text-transform: uppercase;*/
     text-decoration: none;
 
@@ -45,7 +45,7 @@ body{
 
 .fa{
     font-size:24px;
-    color: #27BF0F;
+    color: black;
 }
 
 .container{
@@ -78,6 +78,7 @@ aside{
     display: grid;
     align-items: center;
     font-size: larger;
+    justify-items: center;
 }
 
 ol{
@@ -89,19 +90,29 @@ ul{
     padding-right: 20px;
 }
 
+
 img{
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
+    border-radius: 50%;
+    border-color: #F25260;
  }
 
+ img:hover{
+    box-shadow: 0px 0px 10px 10px #F25260;
+    -webkit-box-shadow: 0px 0px 15px 15px #F25260;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+ }
  
 .images{
     display:grid;
-    grid-template-columns: 25% 25% 25%;
-    align-items: center;
-    padding-left: 20%;
-    padding-top: 5%;
+    grid-template-columns: 25% 25% 25% 25%;
+    padding: 5%;
+    gap: 10px;
+    
+    
 }
 
 .main{
@@ -119,6 +130,7 @@ img{
     grid-template-rows: 10% 90%;
     row-gap: 10px;
     
+    
 }   
 
 .cabecera-tablero{
@@ -129,7 +141,8 @@ img{
     background-color: #ADD9CC;
     
     border: 2px solid #27BF0F;
-    
+    border-radius: 2%;
+    border-style: double;
     
 }
 
@@ -152,6 +165,7 @@ img{
     border: 2px solid #27BF0F;
     justify-items: center;
     padding: 10px;
+    border-radius: 3%;
     
 } 
 
@@ -160,6 +174,7 @@ img{
     width: 3rem;
     box-sizing: border-box;
     border: 1px solid black;
+    border-radius: 5%;
 }
 
 .tablero *{
@@ -178,8 +193,80 @@ footer{
     font-size:large;
     position: absolute;
     bottom: 0;
-    
-    
-
 }
 
+footer p{
+    padding-bottom:10px;
+}
+/* ----------------Fin de Partida-------------*/
+
+main{
+    background-color: #ADD9CC;
+}
+
+.ada{
+    display:grid;
+    justify-items: center;
+    gap: 10px;
+    
+    
+}
+
+.ada img{
+    border-radius: 50%;
+    border-inline: 10px solid black;
+    
+}
+
+.ada img:hover{
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    box-shadow: 0px 0px 15px 15px #F25260;
+    -webkit-box-shadow: 0px 0px 15px 15px #F25260;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+
+
+
+
+button{
+    padding: 0.5em;
+    font-size: 18px;
+    margin: 1em;
+    border-radius: 5%;
+    background-color: #F25260;
+    border: 1px solid #F25260;
+}
+
+.perdiste{
+    display:grid;
+    justify-items: center;
+    padding: 10%; 
+    width: 100%;
+    
+}
+
+
+.perdiste p{
+    text-align: left;
+}
+
+.image-perdiste img{
+    border-radius: 0%;
+    padding: 0.5em;
+    width: 130%;
+    height: 130%;
+    
+    
+}
+
+.image-perdiste img:hover{
+    /*border-radius:50%;
+    -webkit-border-radius:50%;*/
+    box-shadow: 0px 0px 10px 10px #F25260;
+    -webkit-box-shadow: 0px 0px 15px 15px #F25260;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+    
