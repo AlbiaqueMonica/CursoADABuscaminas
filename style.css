@@ -247,12 +247,13 @@ button{
     text-align: left;
 }
 
+
+
 .image-perdiste img{
-    border-radius: 0%;
     padding: 0.5em;
     width: 130%;
     height: 130%;
-    
+    border-radius: 25%;
     
 }
 
