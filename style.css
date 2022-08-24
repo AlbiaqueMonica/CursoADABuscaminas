@@ -31,7 +31,6 @@ body{
 
 .main-menu__link{
     color: black;
-    /*text-transform: uppercase;*/
     text-decoration: none;
 
 }
@@ -43,7 +42,7 @@ body{
 
 .container{
     display: grid;
-    grid-template-columns: 30% 40% 30%;
+    grid-template-columns: 40% 10% 40%;
     
     background-color: #EBEFF2;
     padding-top: 3em;
@@ -57,11 +56,7 @@ h1{
     text-align: center;
 }
 
-.bot-tablero{
-    padding: 0.7em;
-    font-size: larger;
-    font-weight: bolder;
-}
+
 
 h2{
     padding-bottom: 1em;
@@ -110,7 +105,7 @@ img{
     
 }
 
-.main{
+.main-index{
     display: grid;
     align-items: center;
     padding-top: 1%;
@@ -118,66 +113,6 @@ img{
     
 }
 
-.cont-tablero{
-    display: grid;
-    width: 100%;
-    height: 100%;
-    grid-template-rows: 10% 90%;
-    row-gap: 2%;
-    
-    
-}   
-
-.cabecera-tablero{
-    display: grid;
-    width: 100%;
-    height: 100%;
-    grid-template-columns: 40% 20% 40%;
-    background-color: #ADD9CC;
-    
-    border: 2px solid #27BF0F;
-    border-radius: 2%;
-    border-style: double;
-    
-}
-
-
-
-.contador{
-    display: grid;
-    justify-items: center;
-    font-size: 2em;
-    
-    
-}
-
-.tablero{
-    display: grid;
-    grid-template-columns: repeat(8, 2fr);
-    grid-template-rows: repeat(8,2fr);
-    cursor: pointer;
-    gap: 5px;
-    border: 2px solid #27BF0F;
-    justify-items: center;
-    padding: 10px;
-    border-radius: 3%;
-    
-} 
-
-.tablero div {
-    height: 3rem;
-    width: 3rem;
-    box-sizing: border-box;
-    border: 1px solid black;
-    border-radius: 5%;
-}
-
-.tablero *{
-    border: 2px solid black;
-}
-.tablero *:hover{
-    border: 2px solid #F25260;
-}
 
 
 
@@ -193,16 +128,27 @@ footer{
 footer p{
     padding-bottom:10px;
 }
-/* ----------------CSS Fin de Partida-------------*/
 
-main{
-    background-color: #ADD9CC;
+/* ----------------CSS iniciarJuego-------------*/
+
+.jugar{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    padding: 10px;
+    height: 100%;
+    align-items:center;
+    font-size: larger;
+    
+   
+
 }
 
 .ada{
     display:grid;
     justify-items: center;
     gap: 10px;
+    padding-left: 5em;
+    justify-content: left;
     
     
 }
@@ -210,7 +156,7 @@ main{
 .ada img{
     border-radius: 50%;
     border-inline: 10px solid black;
-    
+    padding-left: 0em;
 }
 
 .ada img:hover{
@@ -222,8 +168,106 @@ main{
     -webkit-transform: rotate(360deg);
 }
 
+.puntaje{
+    
+    font-size: larger;
+    font-weight: bolder;
+    margin: 2em;
+    border-left:0em;
+    margin-left: 0%;
+}
+
+.cabecera-tablero{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 40% 20% 40%;
+    background-color: #ADD9CC;
+    
+    border: 2px solid #27BF0F;
+    border-radius: 4%;
+    border-style: double;
+    
+}
+
+.cont-tablero{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-rows: 10% 90%;
+    row-gap: 2%;
+}   
+
+.contador{
+    display: grid;
+    justify-items: center;
+    font-size: 1.5em;
+}
+
+.tablero1{
+    display: grid;
+    grid-template-columns: repeat(5, 2fr);
+    grid-template-rows: repeat(5,2fr);
+    cursor: pointer;
+    gap: 5px;
+    border: 2px solid #27BF0F;
+    justify-items: center;
+    padding: 10px;
+    border-radius: 3%;
+    
+} 
+
+.tablero1 div {
+    height: 3rem;
+    width: 3rem;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 5%;
+}
+
+.tablero1 *{
+    border: 2px solid black;
+}
+
+.tablero1 *:hover{
+    border: 2px solid #F25260;
+}
 
 
+
+/* ----------------CSS finPartida-------------*/
+
+.main{
+    display: grid;
+    align-items: center;
+    padding-top: 1%;
+    background-color: #EBEFF2;
+    
+}
+
+
+
+.adaf{
+    display:grid;
+    justify-items: center;
+    gap: 10px;
+    
+}
+
+.adaf img{
+    border-radius: 50%;
+    border-inline: 10px solid black;
+    
+}
+
+.adaf img:hover{
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    box-shadow: 0px 0px 15px 15px #F25260;
+    -webkit-box-shadow: 0px 0px 15px 15px #F25260;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
 
 button{
     padding: 0.5em;
@@ -287,9 +331,12 @@ button{
         font-size:3em;
     }
 
-    .main{
+    .main-index{
         padding-bottom: 4%;
         
+    }
+    .puntaje{
+        margin-bottom: 2em;
     }
 
     .bot-tablero{
@@ -305,7 +352,24 @@ button{
         padding-left: 5%;
     }
   }
-    
+  
+  @media screen and (max-width: 800px){
+    .contador{
+        font-size:2em;
+    }
+
+    .ada{
+        padding-left: 1em;
+        justify-content: center;
+    }
+
+    .adaf{
+        display:grid;
+        justify-items: center;
+        gap: 10px;
+    }
+
+  }
 
 @media screen and (max-width: 600px) {
    
@@ -323,10 +387,14 @@ button{
     
     }
     .contador{
-        font-size:3em;
+        font-size:1.5em;
     }
 
-    .main{
+    .jugar{
+        grid-template-columns: 1fr;
+    }
+
+    .main-index{
         padding-bottom: 4%;
         
     }
@@ -357,7 +425,11 @@ button{
     }
 
     .contador{
-        font-size:3em;
+        font-size:1.5em;
+    }
+
+    .puntaje{
+        margin-bottom: 1em;
     }
 
     .bot-tablero{
@@ -373,7 +445,23 @@ button{
         
     }
     
+    .jugar{
+       
+        font-size: small;
+        padding-bottom: 3%;
+        grid-template-columns: 1fr;
+        
+    } 
 
+    .ada{
+        justify-content: center;
+    }
+
+    .adaf{
+        display:grid;
+        justify-items: center;
+        gap: 10px;
+    }
   
     aside{
        
@@ -401,9 +489,19 @@ button{
     }
 
     .contador{
-        font-size:3em;
+        font-size:1.5em;
     }
 
+    .ada{
+        justify-content: center;
+    }
+
+    .adaf{
+        display:grid;
+        justify-items: center;
+        gap: 10px;
+    }
+    
     .tablero{
         grid-template-columns: repeat(4, 2fr);
         grid-template-rows: repeat(4,2fr);
